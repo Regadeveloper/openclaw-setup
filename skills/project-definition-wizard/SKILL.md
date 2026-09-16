@@ -11,9 +11,8 @@ User requests to define a new large project setup: "Define a project", "Create a
 1. **Ask for core parameters** (one per interaction):
    - Project name and objective (what are you building?)
    - Expected timeline (weeks/months)
-   - Estimated budget
    - Technology stack
-   - Development methodology (Agile 2-week sprints, Waterfall, etc.)
+   - Team
    - Target user/market
 
 2. **Identify milestones:** Suggest 3-5 key milestones leading to v1.0. Ask if user wants to adjust.
@@ -30,9 +29,8 @@ User requests to define a new large project setup: "Define a project", "Create a
    ## Project Parameters
    - Objective: [what]
    - Timeline: [duration]
-   - Budget: [cost]
+   - Team: [members/working split/disciplines]
    - Tech Stack: [technologies]
-   - Methodology: [approach]
    - Target User: [audience]
    
    ## Milestones
@@ -59,9 +57,8 @@ User requests to define a new large project setup: "Define a project", "Create a
 **Input parameters:**
 - Objective: Personal workout tracking app
 - Timeline: 12 weeks
-- Budget: $15k
+- Team: 1 frontend, 1 backend and 1 ux
 - Stack: React + Node + PostgreSQL
-- Methodology: Agile 2-week sprints
 - Target User: Athletes / Coaches
 
 **Result:**
