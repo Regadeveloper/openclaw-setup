@@ -1,102 +1,78 @@
 # Project Definition Wizard
 
-Define interactivamente los parámetros, milestones y roadmap de un proyecto grande. Genera un Markdown que sirva como documento de referencia para todo el desarrollo hasta v1.0.
+Interactively gather project parameters and generate a structured project definition document in Markdown format. Output includes objectives, timeline, budget, tech stack, milestones, v1.0 MVP scope, and future roadmap.
 
-## Qué hace
+## Trigger
 
-- Hace preguntas interactivas sobre objetivo, timeline, presupuesto, tecnologías y metodología
-- Identifica milestones principales hacia v1.0
-- Define claramente qué entra en v1.0 y qué se deja para futuro
-- Genera un documento Markdown estructurado con toda la información
-- Proporciona un roadmap de desarrollo mínimo
+User requests to define a new large project setup: "Define a project", "Create a project plan", or "Set up a project".
 
-## Cómo usarla
+## Steps
 
-```
-Define un proyecto nuevo: objetivo, timeline, coste, tecnologías, metodología.
-Genera un documento Markdown con milestones, v1.0 y opciones futuras.
-```
+1. **Ask for core parameters** (one per interaction):
+   - Project name and objective (what are you building?)
+   - Expected timeline (weeks/months)
+   - Estimated budget
+   - Technology stack
+   - Development methodology (Agile 2-week sprints, Waterfall, etc.)
+   - Target user/market
 
-## Pasos
+2. **Identify milestones:** Suggest 3-5 key milestones leading to v1.0. Ask if user wants to adjust.
 
-1. **Recopilar parámetros fundamentales:** Pregunta al usuario de forma interactiva:
-   - ¿Cuál es el objetivo principal del proyecto?
-   - ¿Cuánto tiempo esperado (semanas/meses)?
-   - ¿Presupuesto estimado?
-   - ¿Qué stack tecnológico se usará?
-   - ¿Qué metodología? (Agile 2 semanas, Waterfall, etc.)
-   - ¿Quién es el usuario final/mercado?
+3. **Define v1.0 MVP:** Ask what features constitute v1.0 minimum viable product vs future releases.
 
-2. **Identificar milestones:** Con los parámetros recopilados, sugiere 3-5 milestones principales que lleven hasta v1.0. Pregunta al usuario si agrega, quita o reordena.
-
-3. **Definir v1.0:** Pregunta específicamente qué funcionalidades son MVP en v1.0 y qué se deja para versiones futuras.
-
-4. **Generar documento:** Crea un Markdown con estructura:
-   ```
-   # [Nombre del Proyecto]
+4. **Generate markdown document** with structure:
+   ```markdown
+   # Project Name
    
-   ## Resumen Ejecutivo
-   [Objetivo en 2-3 líneas]
+   ## Executive Summary
+   One-paragraph objective statement.
    
-   ## Parámetros del Proyecto
-   - Objetivo: ...
-   - Timeline: ...
-   - Presupuesto: ...
-   - Stack: ...
-   - Metodología: ...
-   - Usuario Final: ...
+   ## Project Parameters
+   - Objective: [what]
+   - Timeline: [duration]
+   - Budget: [cost]
+   - Tech Stack: [technologies]
+   - Methodology: [approach]
+   - Target User: [audience]
    
    ## Milestones
-   1. [Milestone 1]: [Descripción breve]
-   2. [Milestone 2]: ...
+   1. [Milestone]: [brief description]
+   2. [Milestone]: [brief description]
    
-   ## Versión 1.0
-   ### MVP (Lo que ENTRA en v1.0)
-   - Feature 1
-   - Feature 2
+   ## Version 1.0
+   ### MVP Features
+   - [feature]
+   - [feature]
    
-   ### Features Futuras (Después de v1.0)
-   - Feature X
-   - Feature Y
+   ### Future Features
+   - [feature]
+   - [feature]
    
-   ## Roadmap de Desarrollo
-   [Secuencia mínima de trabajo para alcanzar v1.0]
+   ## Development Roadmap
+   Minimal execution path to v1.0.
    ```
 
-5. **Validar con el usuario:** Muestra el documento final, pregunta si hace cambios o si está listo.
+5. **Validate and deliver:** Show draft, ask for edits, finalize and output Markdown file.
 
-6. **Guardar output:** Entrega el Markdown como archivo descargable o imprimible.
+## Example: Fitness Training App
 
-## Verificación
-
-- El documento incluye todos los parámetros recopilados
-- Milestones tienen descripción clara
-- v1.0 y features futuras están bien diferenciados
-- El roadmap es coherente con el timeline
-- El usuario confirma que el documento es útil como referencia
-
-## Ejemplo: App de Entrenamientos
-
-**Parámetros:**
-- Objetivo: App para registrar entrenamientos personalizados
-- Timeline: 12 semanas
-- Presupuesto: $15k
+**Input parameters:**
+- Objective: Personal workout tracking app
+- Timeline: 12 weeks
+- Budget: $15k
 - Stack: React + Node + PostgreSQL
-- Metodología: Agile 2 semanas
-- Usuario: Atletas / Coaches
+- Methodology: Agile 2-week sprints
+- Target User: Athletes / Coaches
 
-**Milestones:**
-1. Setup inicial + catálogo de ejercicios
-2. Creación de rutinas y entrenamientos
-3. Historial y estadísticas básicas
+**Result:**
+- Milestones: Exercise catalog → Workout creation → History tracking
+- v1.0: Record daily workouts with exercises, weights, reps from catalog
+- Future: Analytics, preset plans, social sharing
 
-**v1.0 MVP:**
-- Registrar entrenamientos en distintos días
-- Seleccionar ejercicios de un catálogo
-- Guardar pesos y repeticiones por ejercicio
-- Ver historial básico
+## Verification
 
-**Futuro:**
-- Estadísticas avanzadas
-- Planes de entrenamiento predefinidos
-- Social features (compartir rutinas)
+- All parameters captured and documented
+- 3-5 clear milestones defined
+- v1.0 scope explicitly separated from future features
+- Roadmap is coherent with timeline
+- Output is a complete, ready-to-use Markdown file
